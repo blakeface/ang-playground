@@ -3,29 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Angular Playground</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </head>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script src="app.js"></script>
 
-  <div ng-app="playgroundApp">
-    <div ng-controller="playgroundController">
+  <div ng-app="pgApp">
+    <div ng-controller="pgController">
+      <h1>Hi {{name}}!</h1>
       <input ng-model="name" ng-keyup="namechange()">
-      <h1></h1>
     </div>
   </div>
 
-  <!-- <div>
-  <h1>Hello!</h1>
-</div>
-
-<form>
-<div class="form-group">
-<label for="name">Name</label>
-<input type="text" class="form-control" id="name" placeholder="Enter a name here">
-</div>
-
-</form> -->
 </body>
 </html>
