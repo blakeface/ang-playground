@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Angular Playground</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
   </head>
   <body style="padding: 50px;">
 
       <div ng-controller="pgController">
         <h1 class="page-header">Hi {{name}}!</h1>
-        <input ng-model="name" ng-keyup="namechange()" class="form-control page-header" placeholder="Enter name here">
+        <input ng-model="name" class="form-control page-header" placeholder="Enter name here" autofocus="true">
       </div>
 
   </body>
