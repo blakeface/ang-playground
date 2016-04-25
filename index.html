@@ -9,12 +9,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </head>
-<body>
+<body style="padding: 50px;">
 
   <div ng-app="pgApp">
     <div ng-controller="pgController">
       <h1>Hi {{name}}!</h1>
-      <input ng-model="name" ng-keyup="namechange()">
+      <hr>
+      <input ng-model="name" ng-keyup="namechange()" class="form-control" placeholder="Enter name here">
+      <hr>
     </div>
   </div>
 
